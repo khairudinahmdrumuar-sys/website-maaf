@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesan Maaf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f0;
+            text-align: center;
+            padding: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        let password = prompt("Masukkan sandi:");
+        if (password !== "Faizah") {
+            document.body.innerHTML = "<h1>Akses ditolak!</h1>";
+        } else {
+            document.write("<h1>💥Terkhusus Untuk Ketua OSIM💥</h1><div id='container'></div>");
+            
+            let container = document.getElementById("container");
+            for (let i = 0; i < 1250; i++) {
+                let p = document.createElement("p");
+                p.textContent = "maaf yaa ketua osim cantik☺️";
+                container.appendChild(p);
+            }
+        }
+    </script>
+
+</body>
+</html>
